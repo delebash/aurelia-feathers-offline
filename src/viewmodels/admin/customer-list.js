@@ -20,7 +20,9 @@ export class CustomerList{
     let data = await this.api.read(query);
     $('#Grid').ejGrid({
       dataSource: data,
-      recordDoubleClick: this.rowClicked
+      recordDoubleClick: this.rowClicked,
+      allowPaging : true,
+      pageSettings: { pageSize: 12}
     });
   }
   rowClicked(e){

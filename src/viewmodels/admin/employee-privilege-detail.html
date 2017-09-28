@@ -1,0 +1,20 @@
+<template>
+  <section>
+    <div class="container-fluid">
+      <form>
+    <div class="form-group row">
+     <div class="col-sm-9">
+      <label for="employee_id" class="col-sm-6 col-form-label">employee_id</label>
+            <input type="number"  value.bind="employee-privilege.employee_id" class="form-control" id="employee_id" placeholder="">
+     </div>
+    </div>
+    <div class="form-group row">
+     <div class="col-sm-9">
+      <label for="privilege_id" class="col-sm-6 col-form-label">privilege_id</label>
+            <input type="number"  value.bind="employee-privilege.privilege_id" class="form-control" id="privilege_id" placeholder="">
+     </div>
+    </div>
+  <button click.delegate="save()">Save</button>
+</section>
+</template>
+

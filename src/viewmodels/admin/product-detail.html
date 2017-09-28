@@ -1,0 +1,92 @@
+<template>
+  <section>
+    <div class="container-fluid">
+      <form>
+    <div class="form-group row">
+     <div class="col-sm-9">
+      <label for="supplier_ids" class="col-sm-6 col-form-label">supplier_ids</label>
+           <input type="text"  value.bind="product.supplier_ids" class="form-control" id="supplier_ids" placeholder="">
+     </div>
+    </div>
+    <div class="form-group row">
+     <div class="col-sm-9">
+      <label for="id" class="col-sm-6 col-form-label">id</label>
+            <input type="number"  value.bind="product.id" class="form-control" id="id" placeholder="">
+     </div>
+    </div>
+    <div class="form-group row">
+     <div class="col-sm-9">
+      <label for="product_code" class="col-sm-6 col-form-label">product_code</label>
+           <input type="text"  value.bind="product.product_code" class="form-control" id="product_code" placeholder="">
+     </div>
+    </div>
+    <div class="form-group row">
+     <div class="col-sm-9">
+      <label for="product_name" class="col-sm-6 col-form-label">product_name</label>
+           <input type="text"  value.bind="product.product_name" class="form-control" id="product_name" placeholder="">
+     </div>
+    </div>
+    <div class="form-group row">
+     <div class="col-sm-9">
+      <label for="description" class="col-sm-6 col-form-label">description</label>
+           <input type="text"  value.bind="product.description" class="form-control" id="description" placeholder="">
+     </div>
+    </div>
+    <div class="form-group row">
+     <div class="col-sm-9">
+      <label for="standard_cost" class="col-sm-6 col-form-label">standard_cost</label>
+              <input type="text"  value.bind="product.standard_cost" class="form-control" id="standard_cost" placeholder="">
+     </div>
+    </div>
+    <div class="form-group row">
+     <div class="col-sm-9">
+      <label for="list_price" class="col-sm-6 col-form-label">list_price</label>
+              <input type="text"  value.bind="product.list_price" class="form-control" id="list_price" placeholder="">
+     </div>
+    </div>
+    <div class="form-group row">
+     <div class="col-sm-9">
+      <label for="reorder_level" class="col-sm-6 col-form-label">reorder_level</label>
+              <input type="text"  value.bind="product.reorder_level" class="form-control" id="reorder_level" placeholder="">
+     </div>
+    </div>
+    <div class="form-group row">
+     <div class="col-sm-9">
+      <label for="target_level" class="col-sm-6 col-form-label">target_level</label>
+              <input type="text"  value.bind="product.target_level" class="form-control" id="target_level" placeholder="">
+     </div>
+    </div>
+    <div class="form-group row">
+     <div class="col-sm-9">
+      <label for="quantity_per_unit" class="col-sm-6 col-form-label">quantity_per_unit</label>
+           <input type="text"  value.bind="product.quantity_per_unit" class="form-control" id="quantity_per_unit" placeholder="">
+     </div>
+    </div>
+    <div class="form-group row">
+     <div class="col-sm-9">
+      <label for="discontinued" class="col-sm-6 col-form-label">discontinued</label>
+              <input type="text"  value.bind="product.discontinued" class="form-control" id="discontinued" placeholder="">
+     </div>
+    </div>
+    <div class="form-group row">
+     <div class="col-sm-9">
+      <label for="minimum_reorder_quantity" class="col-sm-6 col-form-label">minimum_reorder_quantity</label>
+              <input type="text"  value.bind="product.minimum_reorder_quantity" class="form-control" id="minimum_reorder_quantity" placeholder="">
+     </div>
+    </div>
+    <div class="form-group row">
+     <div class="col-sm-9">
+      <label for="category" class="col-sm-6 col-form-label">category</label>
+           <input type="text"  value.bind="product.category" class="form-control" id="category" placeholder="">
+     </div>
+    </div>
+    <div class="form-group row">
+     <div class="col-sm-9">
+      <label for="attachments" class="col-sm-6 col-form-label">attachments</label>
+              <input type="text"  value.bind="product.attachments" class="form-control" id="attachments" placeholder="">
+     </div>
+    </div>
+  <button click.delegate="save()">Save</button>
+</section>
+</template>
+

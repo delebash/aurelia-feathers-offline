@@ -1,0 +1,38 @@
+<template>
+  <section>
+    <div class="container-fluid">
+      <form>
+    <div class="form-group row">
+     <div class="col-sm-9">
+      <label for="group_by" class="col-sm-6 col-form-label">group_by</label>
+           <input type="text"  value.bind="sales-report.group_by" class="form-control" id="group_by" placeholder="">
+     </div>
+    </div>
+    <div class="form-group row">
+     <div class="col-sm-9">
+      <label for="display" class="col-sm-6 col-form-label">display</label>
+           <input type="text"  value.bind="sales-report.display" class="form-control" id="display" placeholder="">
+     </div>
+    </div>
+    <div class="form-group row">
+     <div class="col-sm-9">
+      <label for="title" class="col-sm-6 col-form-label">title</label>
+           <input type="text"  value.bind="sales-report.title" class="form-control" id="title" placeholder="">
+     </div>
+    </div>
+    <div class="form-group row">
+     <div class="col-sm-9">
+      <label for="filter_row_source" class="col-sm-6 col-form-label">filter_row_source</label>
+           <input type="text"  value.bind="sales-report.filter_row_source" class="form-control" id="filter_row_source" placeholder="">
+     </div>
+    </div>
+    <div class="form-group row">
+     <div class="col-sm-9">
+      <label for="default" class="col-sm-6 col-form-label">default</label>
+              <input type="text"  value.bind="sales-report.default" class="form-control" id="default" placeholder="">
+     </div>
+    </div>
+  <button click.delegate="save()">Save</button>
+</section>
+</template>
+

@@ -1,0 +1,31 @@
+<template>
+
+  <require from="components/title/my-title"></require>
+  <require from="components/accordion/my-accordion"></require>
+  <require from="syncfusion-javascript/Content/ej/web/bootstrap-theme/ej.web.all.min.css"></require>
+  <require from="syncfusion-javascript/Content/ej/web/responsive-css/ej.responsive.css"></require>
+
+  <div class="wrapper">
+
+    <div class="logo">
+      <img src="../images/arkright.png" height="50px" width="200px">
+    </div>
+    <!--<my-drawer router.bind="router"></my-drawer>-->
+    <my-title></my-title>
+    <div class="accordion">
+      <!--<h2>Animal Rescue Kit</h2>-->
+      <my-accordion router.bind="router"></my-accordion>
+    </div>
+    <div class="content">
+      <router-view></router-view>
+    </div>
+  </div>
+  <!--<div id="accordion">-->
+  <!--<my-accordion></my-accordion>-->
+  <!--</div>-->
+  <!--<div class="content">-->
+  <!--<router-view></router-view>-->
+  <!--</div>-->
+</template>
+
+

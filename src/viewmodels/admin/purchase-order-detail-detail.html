@@ -1,0 +1,56 @@
+<template>
+  <section>
+    <div class="container-fluid">
+      <form>
+    <div class="form-group row">
+     <div class="col-sm-9">
+      <label for="id" class="col-sm-6 col-form-label">id</label>
+            <input type="number"  value.bind="purchase-order-detail.id" class="form-control" id="id" placeholder="">
+     </div>
+    </div>
+    <div class="form-group row">
+     <div class="col-sm-9">
+      <label for="purchase_order_id" class="col-sm-6 col-form-label">purchase_order_id</label>
+              <input type="text"  value.bind="purchase-order-detail.purchase_order_id" class="form-control" id="purchase_order_id" placeholder="">
+     </div>
+    </div>
+    <div class="form-group row">
+     <div class="col-sm-9">
+      <label for="product_id" class="col-sm-6 col-form-label">product_id</label>
+              <input type="text"  value.bind="purchase-order-detail.product_id" class="form-control" id="product_id" placeholder="">
+     </div>
+    </div>
+    <div class="form-group row">
+     <div class="col-sm-9">
+      <label for="quantity" class="col-sm-6 col-form-label">quantity</label>
+              <input type="text"  value.bind="purchase-order-detail.quantity" class="form-control" id="quantity" placeholder="">
+     </div>
+    </div>
+    <div class="form-group row">
+     <div class="col-sm-9">
+      <label for="unit_cost" class="col-sm-6 col-form-label">unit_cost</label>
+              <input type="text"  value.bind="purchase-order-detail.unit_cost" class="form-control" id="unit_cost" placeholder="">
+     </div>
+    </div>
+    <div class="form-group row">
+     <div class="col-sm-9">
+      <label for="date_received" class="col-sm-6 col-form-label">date_received</label>
+              <input type="text"  value.bind="purchase-order-detail.date_received" class="form-control" id="date_received" placeholder="">
+     </div>
+    </div>
+    <div class="form-group row">
+     <div class="col-sm-9">
+      <label for="posted_to_inventory" class="col-sm-6 col-form-label">posted_to_inventory</label>
+              <input type="text"  value.bind="purchase-order-detail.posted_to_inventory" class="form-control" id="posted_to_inventory" placeholder="">
+     </div>
+    </div>
+    <div class="form-group row">
+     <div class="col-sm-9">
+      <label for="inventory_id" class="col-sm-6 col-form-label">inventory_id</label>
+              <input type="text"  value.bind="purchase-order-detail.inventory_id" class="form-control" id="inventory_id" placeholder="">
+     </div>
+    </div>
+  <button click.delegate="save()">Save</button>
+</section>
+</template>
+

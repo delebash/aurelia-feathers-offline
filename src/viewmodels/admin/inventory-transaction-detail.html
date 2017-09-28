@@ -1,0 +1,62 @@
+<template>
+  <section>
+    <div class="container-fluid">
+      <form>
+    <div class="form-group row">
+     <div class="col-sm-9">
+      <label for="id" class="col-sm-6 col-form-label">id</label>
+            <input type="number"  value.bind="inventory-transaction.id" class="form-control" id="id" placeholder="">
+     </div>
+    </div>
+    <div class="form-group row">
+     <div class="col-sm-9">
+      <label for="transaction_type" class="col-sm-6 col-form-label">transaction_type</label>
+              <input type="text"  value.bind="inventory-transaction.transaction_type" class="form-control" id="transaction_type" placeholder="">
+     </div>
+    </div>
+    <div class="form-group row">
+     <div class="col-sm-9">
+      <label for="transaction_created_date" class="col-sm-6 col-form-label">transaction_created_date</label>
+              <input type="text"  value.bind="inventory-transaction.transaction_created_date" class="form-control" id="transaction_created_date" placeholder="">
+     </div>
+    </div>
+    <div class="form-group row">
+     <div class="col-sm-9">
+      <label for="transaction_modified_date" class="col-sm-6 col-form-label">transaction_modified_date</label>
+              <input type="text"  value.bind="inventory-transaction.transaction_modified_date" class="form-control" id="transaction_modified_date" placeholder="">
+     </div>
+    </div>
+    <div class="form-group row">
+     <div class="col-sm-9">
+      <label for="product_id" class="col-sm-6 col-form-label">product_id</label>
+              <input type="text"  value.bind="inventory-transaction.product_id" class="form-control" id="product_id" placeholder="">
+     </div>
+    </div>
+    <div class="form-group row">
+     <div class="col-sm-9">
+      <label for="quantity" class="col-sm-6 col-form-label">quantity</label>
+              <input type="text"  value.bind="inventory-transaction.quantity" class="form-control" id="quantity" placeholder="">
+     </div>
+    </div>
+    <div class="form-group row">
+     <div class="col-sm-9">
+      <label for="purchase_order_id" class="col-sm-6 col-form-label">purchase_order_id</label>
+              <input type="text"  value.bind="inventory-transaction.purchase_order_id" class="form-control" id="purchase_order_id" placeholder="">
+     </div>
+    </div>
+    <div class="form-group row">
+     <div class="col-sm-9">
+      <label for="customer_order_id" class="col-sm-6 col-form-label">customer_order_id</label>
+              <input type="text"  value.bind="inventory-transaction.customer_order_id" class="form-control" id="customer_order_id" placeholder="">
+     </div>
+    </div>
+    <div class="form-group row">
+     <div class="col-sm-9">
+      <label for="comments" class="col-sm-6 col-form-label">comments</label>
+           <input type="text"  value.bind="inventory-transaction.comments" class="form-control" id="comments" placeholder="">
+     </div>
+    </div>
+  <button click.delegate="save()">Save</button>
+</section>
+</template>
+

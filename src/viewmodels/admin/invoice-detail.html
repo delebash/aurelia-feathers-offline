@@ -1,0 +1,50 @@
+<template>
+  <section>
+    <div class="container-fluid">
+      <form>
+    <div class="form-group row">
+     <div class="col-sm-9">
+      <label for="id" class="col-sm-6 col-form-label">id</label>
+            <input type="number"  value.bind="invoice.id" class="form-control" id="id" placeholder="">
+     </div>
+    </div>
+    <div class="form-group row">
+     <div class="col-sm-9">
+      <label for="order_id" class="col-sm-6 col-form-label">order_id</label>
+              <input type="text"  value.bind="invoice.order_id" class="form-control" id="order_id" placeholder="">
+     </div>
+    </div>
+    <div class="form-group row">
+     <div class="col-sm-9">
+      <label for="invoice_date" class="col-sm-6 col-form-label">invoice_date</label>
+              <input type="text"  value.bind="invoice.invoice_date" class="form-control" id="invoice_date" placeholder="">
+     </div>
+    </div>
+    <div class="form-group row">
+     <div class="col-sm-9">
+      <label for="due_date" class="col-sm-6 col-form-label">due_date</label>
+              <input type="text"  value.bind="invoice.due_date" class="form-control" id="due_date" placeholder="">
+     </div>
+    </div>
+    <div class="form-group row">
+     <div class="col-sm-9">
+      <label for="tax" class="col-sm-6 col-form-label">tax</label>
+              <input type="text"  value.bind="invoice.tax" class="form-control" id="tax" placeholder="">
+     </div>
+    </div>
+    <div class="form-group row">
+     <div class="col-sm-9">
+      <label for="shipping" class="col-sm-6 col-form-label">shipping</label>
+              <input type="text"  value.bind="invoice.shipping" class="form-control" id="shipping" placeholder="">
+     </div>
+    </div>
+    <div class="form-group row">
+     <div class="col-sm-9">
+      <label for="amount_due" class="col-sm-6 col-form-label">amount_due</label>
+              <input type="text"  value.bind="invoice.amount_due" class="form-control" id="amount_due" placeholder="">
+     </div>
+    </div>
+  <button click.delegate="save()">Save</button>
+</section>
+</template>
+

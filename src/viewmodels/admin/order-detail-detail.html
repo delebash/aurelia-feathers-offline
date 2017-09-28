@@ -1,0 +1,68 @@
+<template>
+  <section>
+    <div class="container-fluid">
+      <form>
+    <div class="form-group row">
+     <div class="col-sm-9">
+      <label for="id" class="col-sm-6 col-form-label">id</label>
+            <input type="number"  value.bind="order-detail.id" class="form-control" id="id" placeholder="">
+     </div>
+    </div>
+    <div class="form-group row">
+     <div class="col-sm-9">
+      <label for="order_id" class="col-sm-6 col-form-label">order_id</label>
+              <input type="text"  value.bind="order-detail.order_id" class="form-control" id="order_id" placeholder="">
+     </div>
+    </div>
+    <div class="form-group row">
+     <div class="col-sm-9">
+      <label for="product_id" class="col-sm-6 col-form-label">product_id</label>
+              <input type="text"  value.bind="order-detail.product_id" class="form-control" id="product_id" placeholder="">
+     </div>
+    </div>
+    <div class="form-group row">
+     <div class="col-sm-9">
+      <label for="quantity" class="col-sm-6 col-form-label">quantity</label>
+              <input type="text"  value.bind="order-detail.quantity" class="form-control" id="quantity" placeholder="">
+     </div>
+    </div>
+    <div class="form-group row">
+     <div class="col-sm-9">
+      <label for="unit_price" class="col-sm-6 col-form-label">unit_price</label>
+              <input type="text"  value.bind="order-detail.unit_price" class="form-control" id="unit_price" placeholder="">
+     </div>
+    </div>
+    <div class="form-group row">
+     <div class="col-sm-9">
+      <label for="discount" class="col-sm-6 col-form-label">discount</label>
+              <input type="text"  value.bind="order-detail.discount" class="form-control" id="discount" placeholder="">
+     </div>
+    </div>
+    <div class="form-group row">
+     <div class="col-sm-9">
+      <label for="status_id" class="col-sm-6 col-form-label">status_id</label>
+              <input type="text"  value.bind="order-detail.status_id" class="form-control" id="status_id" placeholder="">
+     </div>
+    </div>
+    <div class="form-group row">
+     <div class="col-sm-9">
+      <label for="date_allocated" class="col-sm-6 col-form-label">date_allocated</label>
+              <input type="text"  value.bind="order-detail.date_allocated" class="form-control" id="date_allocated" placeholder="">
+     </div>
+    </div>
+    <div class="form-group row">
+     <div class="col-sm-9">
+      <label for="purchase_order_id" class="col-sm-6 col-form-label">purchase_order_id</label>
+              <input type="text"  value.bind="order-detail.purchase_order_id" class="form-control" id="purchase_order_id" placeholder="">
+     </div>
+    </div>
+    <div class="form-group row">
+     <div class="col-sm-9">
+      <label for="inventory_id" class="col-sm-6 col-form-label">inventory_id</label>
+              <input type="text"  value.bind="order-detail.inventory_id" class="form-control" id="inventory_id" placeholder="">
+     </div>
+    </div>
+  <button click.delegate="save()">Save</button>
+</section>
+</template>
+

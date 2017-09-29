@@ -21,8 +21,7 @@ export class CustomerList{
     $('#Grid').ejGrid({
       dataSource: data,
       recordDoubleClick: this.rowClicked,
-      allowPaging : true,
-      pageSettings: { pageSize: 12}
+
     });
   }
   rowClicked(e){
